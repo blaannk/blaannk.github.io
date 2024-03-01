@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Bolide UHQ</title>
+    <meta name="description" content="Trouve les informations d'un vehicule avec sa plaque d'immatriculation !">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="./js/main.js"></script>
+    <link rel="stylesheet" href="./css/main.css">
+  </head>
+  <body>
+    <div class="loader-container" id="bigloader">
+      <div class="loader"></div>
+    </div>    
+    <h1>BOLIDE V2</h1>
+<h2>Pour scanner des plaques en illimité bb</h2>
+
+<form id="plaqueform">
+    <div style="text-align: center;">
+        <input minlength="7" maxlength="7" id="plaqueinput" type="text" placeholder="Entrer une plaque" required>
+        <br>
+        <br>
+        <button type="submit" id="plaquebutton">SCAN</button>
+    </div>
+</form>
+
+<div>
+    <h1 style="display: none;" id="vehiculename"></h1>
+</div>
+
+<div class="container">
+  <div id="infotab" class="tab-wrap" style="display: none;">
+
+    <input type="radio" id="tab4" name="tabGroup2" class="tab" checked>
+    <label for="tab4">🚗 Véhicule</label>
+
+    <input type="radio" id="tab5" name="tabGroup2" class="tab">
+    <label for="tab5">⚙️ Motorisation</label>
+
+    <input type="radio" id="tab6" name="tabGroup2" class="tab">
+    <label for="tab6">🔛 Dimensions</label>
+
+    <input type="radio" id="tab7" name="tabGroup2" class="tab">
+    <label for="tab7">⚡ Consommation</label>
+
+    <input type="radio" id="tab8" name="tabGroup2" class="tab">
+    <label for="tab8">🔧 Pneus et carroserie</label>
+
+    <div class="tab__content" id="vehicule">
+    </div>
+
+    <div class="tab__content" id="motor">
+    </div>
+
+    <div class="tab__content" id="dimensions">
+    </div>
+
+    <div class="tab__content" id="conso">
+    </div>
+
+    <div class="tab__content" id="pneus">
+    </div>
+
+  </div>
+
+</div>
+  </body>
+</html>
