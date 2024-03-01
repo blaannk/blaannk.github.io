@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         var plaqueinput = document.getElementById('plaqueinput').value;
 
-        var apiUrl = 'http://127.0.0.1:8000/plate/' + plaqueinput;
+        var apiUrl = 'https://bolidapi.onrender.com/plate/' + plaqueinput;
 
         fetch(apiUrl, {
             method: 'GET'
